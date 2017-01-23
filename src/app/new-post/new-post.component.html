@@ -17,5 +17,5 @@
     <label for="imgURL">imgURL: </label>
     <input #imgURL type="text">
   </div>
-    <button (click)="submitForm(newTitle.value, description.value, imgURL.value, price.value); newTitle.value=''; description.value=''; price.value=''; imgURL.value='';">add</button>
+    <a routerLink="/splash"><button (click)="submitForm(newTitle.value, description.value, imgURL.value, price.value); newTitle.value=''; description.value=''; price.value=''; imgURL.value='';">add</button></a>
   </div>

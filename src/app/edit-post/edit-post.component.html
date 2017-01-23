@@ -1,3 +1,21 @@
-<p>
-  edit-post works!
-</p>
+<div class="editForm">
+  <h3>Edit Post</h3>
+  <div>
+    <label for="title">title: </label>
+    <input #newTitle type="text" value={{selectedPost.title}}>
+  </div>
+  <div>
+    <label for="description">description: </label>
+    <input #description type="text" value={{selectedPost.description}}>
+  </div>
+  <div>
+
+    <label for="price">price: </label>
+    <input #price type="number" value={{selectedPost.price}}>
+  </div>
+  <div>
+    <label for="imgURL">imgURL: </label>
+    <input #imgURL type="text" value={{selectedPost.imgURL}}>
+  </div>
+    <a routerLink="/splash"><button (click)="editPost(newTitle.value, description.value, imgURL.value, price.value)">edit</button></a>
+  </div>

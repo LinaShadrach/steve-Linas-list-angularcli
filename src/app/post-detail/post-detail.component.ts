@@ -31,4 +31,10 @@ export class PostDetailComponent implements OnInit {
 
   }
 
+  deletePost() {
+    this.route.params.forEach((urlParametersArray) => {
+      this.postId = parseInt(urlParametersArray['id']);
+    })
+    this.postService.deletePost(this.postId);
+  }
 }

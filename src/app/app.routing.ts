@@ -21,7 +21,7 @@ const appRoutes: Routes = [
     component: DeletePostComponent
   },
   {
-    path: 'edit-post',
+    path: 'posts/:id/edit-post',
     component: EditPostComponent
   },
   {
