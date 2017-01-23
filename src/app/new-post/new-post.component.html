@@ -1,0 +1,21 @@
+<div class="postForm">
+  <h3>add Post</h3>
+  <div>
+    <label for="title">title: </label>
+    <input #newTitle type="text">
+  </div>
+  <div>
+    <label for="description">description: </label>
+    <input #description type="text">
+  </div>
+  <div>
+
+    <label for="price">price: </label>
+    <input #price type="number">
+  </div>
+  <div>
+    <label for="imgURL">imgURL: </label>
+    <input #imgURL type="text">
+  </div>
+    <button (click)="submitForm(newTitle.value, description.value, imgURL.value, price.value); newTitle.value=''; description.value=''; price.value=''; imgURL.value='';">add</button>
+  </div>
