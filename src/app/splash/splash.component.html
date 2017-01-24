@@ -1,5 +1,10 @@
 <h2>For Sale</h2>
-<div *ngFor="let post of posts" (click)="goToPostDetail(post)" class="panel panel-default">
+<div class="priceFilter">
+  <label for="priceSelection">Maximum price:</label>
+  <input type="number" #priceSelection>
+  <button (click)="onPriceChange(priceSelection.value)">Update Search</button>
+</div>
+<div *ngFor="let post of posts | byPrice:filterPrice" (click)="goToPostDetail(post)" class="panel panel-default">
   <div class="panel-heading">
     <h3><em>{{post.title}}</em></h3>
   </div>

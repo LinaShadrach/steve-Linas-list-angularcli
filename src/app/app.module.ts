@@ -11,6 +11,7 @@ import { NewPostComponent } from './new-post/new-post.component';
 import { DeletePostComponent } from './delete-post/delete-post.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { ByPricePipe } from './by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     NewPostComponent,
     DeletePostComponent,
     EditPostComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    ByPricePipe
   ],
   imports: [
     BrowserModule,
